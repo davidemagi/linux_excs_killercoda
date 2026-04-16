@@ -2,7 +2,8 @@
 
 Mario, il tuo collega sysadmin, è partito per ferie questa mattina.
 
-Ti ha lasciato accesso al server e una lista di cose da fare. Non ha spiegato molto — dice che "ci vuole poco, è tutto semplice..".
+Ti ha lasciato accesso al server e una lista di cose da fare. Non ha spiegato molto — dice che "ci vuole poco, è tutto semplice".
+
 Ovvio.
 
 ## Il tuo obiettivo
