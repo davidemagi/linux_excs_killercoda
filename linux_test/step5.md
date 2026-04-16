@@ -5,6 +5,7 @@ Ultimo task. Mario vuole un disco virtuale di backup montato e pronto all'uso. T
 ## Specifiche di Mario
 
 - Il disco virtuale deve essere un file da **100MB** salvato in `/tmp/backup_mario.img`
+  Puoi usare il comando `sudo dd if=/dev/zero of=/tmp/backup_mario.img bs=1M count=100` per crearlo
 - Deve essere formattato con filesystem **ext4**
 - Deve essere montato su `/mnt/backup_mario`
 - Una volta montato, copia dentro il file `/tmp/mario_errori.txt` che hai creato al task 3
