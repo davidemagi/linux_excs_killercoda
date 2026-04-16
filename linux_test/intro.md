@@ -2,11 +2,12 @@
 
 Mario, il tuo collega sysadmin, è partito per ferie questa mattina.
 
-Ti ha lasciato accesso al server e una lista di cose da fare. Non ha spiegato molto — dice che "ci vuole poco, è tutto semplice". Ovviamente.
+Ti ha lasciato accesso al server e una lista di cose da fare. Non ha spiegato molto — dice che "ci vuole poco, è tutto semplice..".
+Ovvio.
 
 ## Il tuo obiettivo
 
-Completare tutti e 5 i task che Mario ti ha lasciato, usando i comandi Linux che hai imparato oggi.
+Completare tutti e 5 i task che Mario ti ha lasciato, usando i comandi Linux che hai imparato nel corso delle lezioni.
 
 ## Prima di iniziare
 
