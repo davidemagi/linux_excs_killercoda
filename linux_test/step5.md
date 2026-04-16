@@ -24,19 +24,15 @@ Questo comando associa il file a un **loop device** (qualcosa tipo `/dev/loop0`)
 
 ## 2. Partiziona il disco
 
-Usa `fdisk` sul loop device che hai ottenuto al passo precedente per creare una partizione primaria che occupi tutto lo spazio disponibile.
+Usa `fdisk` o `parted` sul disco virtuale per creare una partizione primaria che occupi tutto lo spazio disponibile.
 
-> 💡 Ricorda: dentro `fdisk` devi creare la partizione e poi scrivere le modifiche. Finché non scrivi, nessuna modifica è permanente.
-
-Dopo aver partizionato, verifica con `lsblk` che la partizione sia comparsa.
+Dopo aver partizionato, verifica che la partizione sia comparsa.
 
 ---
 
 ## 3. Formatta
 
-Formatta la partizione appena creata con il filesystem **ext4** e assegnale l'etichetta `backup-mario`.
-
-> 💡 Il comando per formattare è `mkfs` — esistono varianti per ogni tipo di filesystem. Controlla anche come si aggiunge un'etichetta.
+Formatta la partizione appena creata con il filesystem **ext4**.
 
 ---
 
@@ -44,15 +40,11 @@ Formatta la partizione appena creata con il filesystem **ext4** e assegnale l'et
 
 Mario vuole che il disco si monti automaticamente ad ogni avvio su `/mnt/backup_mario`.
 
-- Crea il punto di mount
+- Crea la directory di mount
 - Trova l'**UUID** della partizione appena formattata
 - Aggiungi la riga corretta a `/etc/fstab`
-- Usa `mount -a` per montare tutto quello che c'è in fstab senza riavviare
-- Verifica con `df -h` che il disco sia montato correttamente
-
-> 💡 Per trovare l'UUID di una partizione puoi usare `blkid`. Il formato di una riga fstab è: `UUID=... punto_di_mount filesystem opzioni 0 2`
-
-> ⚠️ Un fstab sbagliato può impedire il boot del sistema. Prima di salvare, rileggi la riga che hai scritto.
+- Usa il comando apposito per montare tutto quello che c'è in fstab senza riavviare
+- Verifica che il disco sia montato correttamente
 
 ---
 
@@ -60,9 +52,8 @@ Mario vuole che il disco si monti automaticamente ad ogni avvio su `/mnt/backup_
 
 Ora che il disco è montato, mettici qualcosa dentro:
 
-- Crea un file `info.txt` con dentro la data e ora corrente e il tuo nome utente
+- Crea un file `info.txt`
 - Crea una directory `log/` e copia dentro il file `/tmp/mario_errori.txt` (dal task 3)
-- Crea un secondo file `note.txt` e scrivici dentro almeno tre righe di testo libero usando `echo` e `>>`
 
 ---
 
