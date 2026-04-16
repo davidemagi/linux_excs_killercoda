@@ -5,7 +5,7 @@ In `/tmp/mario_log.txt` c'è il log del server. Mario vuole sapere quanti errori
 ## Cosa si aspetta Mario
 
 - Leggi il file di log per capire com'è strutturato
-- Conta il numero totale di righe del file (con il comando apposito, non ad occhio :-) )
+- Conta il numero totale di righe del file (con il comando apposito, non ad occhio 😊 )
 - Stampa solo le righe che contengono errori
 - Conta quanti errori ci sono
 - Salva gli errori in un file separato: `/tmp/mario_errori.txt`
