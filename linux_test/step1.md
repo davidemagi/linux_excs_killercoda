@@ -18,9 +18,7 @@ cat /home/mario/ISTRUZIONI.txt
 ```
 
 **4. Mario dice che c'è qualcosa di interessante in `/tmp/`. Trovalo:**
-```
-ls -la /tmp/
-```
+
 
 **5. Guarda la struttura generale del filesystem:**
 ```
