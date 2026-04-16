@@ -1,6 +1,6 @@
 # Task 4 — Controlla il sistema
 
-Mario vuole un resoconto dello stato del server prima di sparire del tutto. Tocca a te raccogliere le informazioni.
+Mario vuole un resoconto dello stato del server. Tocca a te raccogliere le informazioni.
 
 ## Cosa si aspetta Mario
 
