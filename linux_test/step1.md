@@ -8,7 +8,6 @@ Mario ti ha lasciato accesso al server, ma non sai nulla di questo sistema. Prim
 - Scopri in quale directory ti trovi in questo momento
 - Esplora la home di mario e leggi il file di istruzioni che ti ha lasciato
 - Dai un'occhiata a cosa c'è in `/tmp/`
-- Guarda la struttura generale del filesystem dalla radice
 
 ## Risultato atteso
 
