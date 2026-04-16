@@ -11,9 +11,6 @@ pwd
 ```
 
 **2. Esplora la home di mario. Cosa c'è dentro?**
-```
-ls -la /home/mario/
-```
 
 **3. Leggi la nota che ha lasciato:**
 ```
