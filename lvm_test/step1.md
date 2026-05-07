@@ -10,4 +10,4 @@ Leggi anche il promemoria che Mario ha lasciato nella sua home, così sai cosa t
 
 Quando sei pronto, inizializza entrambi i dischi come Physical Volume. È il comando con cui "consegni" un disco a LVM — scrive i propri metadati all'inizio del device e da quel momento LVM lo riconosce come suo.
 
-Dopo, verifica con `pvs` che siano comparsi entrambi. Prova anche `pvdisplay` per vedere i dettagli — in particolare il campo **PE Size**, che vale la pena capire prima di andare avanti.
+Dopo, verifica con `pvs` che siano comparsi entrambi. Prova anche `pvdisplay` per vedere i dettagli.
