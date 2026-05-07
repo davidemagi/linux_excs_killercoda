@@ -1,32 +1,13 @@
-# Task 4 — Formatta, monta e usa i volumi
+# Task 4 — Formatta, monta, usa
 
-I Logical Volume esistono ma sono ancora vuoti — come partizioni non formattate. Bisogna creare un filesystem e montarli.
+I Logical Volume esistono ma sono vuoti — come un disco appena comprato. Bisogna creare un filesystem e montarli.
 
-## 1. Formatta i due LV
+Formatta entrambi con ext4, poi montali: `lv_app` su `/mnt/app` e `lv_log` su `/mnt/log`. Le directory ci sono già.
 
-Formatta entrambi i Logical Volume con il filesystem **ext4**.
-
-> ⚠️ Questo è distruttivo — ma i LV sono appena stati creati e sono vuoti, quindi nessun problema.
-
-## 2. Monta i volumi
-
-Le directory di mount sono già pronte sul sistema (`/mnt/app` e `/mnt/log`). Monta i due LV sulle rispettive directory.
-
-## 3. Verifica che siano montati
-
-Usa `df -h` per confermare che i volumi siano montati e mostrino lo spazio disponibile corretto.
-
-## 4. Scrivi qualcosa dentro
-
-Mario vuole che i volumi siano operativi. Fai queste operazioni:
-
-- In `/mnt/app`: crea un file `versione.txt` con scritto dentro `app v1.0`
-- In `/mnt/log`: copia il file `/home/mario/logs/applicazione.log`
-
-## 5. Cerca gli errori nel log
-
-Ora che il log è sul volume dedicato, filtra le righe che contengono `ERROR` e salvale in un file `errori.log` nella stessa directory `/mnt/log/`.
+Verifica con `df -h` che siano effettivamente montati e che lo spazio tornino.
 
 ---
 
-**Risultato atteso:** due volumi montati, con file scritti e verificabili.
+Ora mettici qualcosa dentro. In `/mnt/app` crea un file `versione.txt` con scritto `app v1.0`. In `/mnt/log` copia il file `/home/mario/logs/applicazione.log`.
+
+Poi filtra le righe con `ERROR` da quel log e salvale in `/mnt/log/errori.log`. Saranno utili dopo.
