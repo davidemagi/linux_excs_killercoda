@@ -12,6 +12,8 @@ La buona notizia è che con LVM puoi farlo senza smontare nulla.
 
 Collega `/tmp/disco3.img` come loop device su `/dev/loop12`, inizializzalo come PV e aggiungilo al VG `vg_mario` con `vgextend`.
 
-Poi estendi `lv_app` di 150MB. Usa l'opzione di `lvextend` che ridimensiona anche il filesystem in automatico, così fai tutto in un comando solo.
+Poi estendi `lv_app` di 150MB.
+
+> 💡 `lvextend` ha un'opzione `-r` che ridimensiona anche il filesystem in automatico, senza dover lanciare `resize2fs` separatamente.
 
 Alla fine verifica con `df -h` che `lv_app` sia cresciuto e che `versione.txt` sia ancora lì intatto.
