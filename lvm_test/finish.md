@@ -1,17 +1,9 @@
-# Missione compiuta. 🎉
+# Fatto.
 
-Hai costruito da zero una struttura LVM completa: Physical Volume, Volume Group, Logical Volume, filesystem, mount, fstab. E hai gestito un'espansione a caldo senza smontare nulla.
+Hai configurato LVM da zero, gestito un'espansione a caldo e lasciato tutto registrato in fstab. Sul serio, non è roba banale.
 
-Roba da amministratore di sistema vero.
+Mario ti manda un altro messaggio, stavolta di testo:
 
-Mario ti manda un altro messaggio vocale — stavolta di 3 secondi:
-
-> *"Perfetto grazie! Ah — ho accettato una seconda tappa a Porto. Torno tra altre due settimane. Il server di produzione ha altri quattro dischi da configurare. Ti mando le credenziali."*
-
-Pausa.
-
-> *"Non mi odiare."*
-
----
+> *"Perfetto grazie mille!! Ah ti volevo dire — ho accettato una seconda tappa a Porto, torno tra altre due settimane. Il server di produzione ha altri quattro dischi da configurare, ti mando le credenziali domani. Non mi odiare"*
 
 Morale: Mario è una brutta persona.
