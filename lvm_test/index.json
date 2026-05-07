@@ -1,0 +1,44 @@
+{
+  "title": "Linux — LVM: Il Server di Mario Sta Esplodendo",
+  "description": "Mario ti ha chiamato dal suo secondo viaggio. Il server ha i dischi pieni. Devi salvare tutto con LVM.",
+  "difficulty": "Intermediate",
+  "time": "45",
+  "details": {
+    "steps": [
+      {
+        "title": "Task 1 — Inizializza i dischi (Physical Volume)",
+        "text": "step1.md"
+      },
+      {
+        "title": "Task 2 — Crea il pool di spazio (Volume Group)",
+        "text": "step2.md"
+      },
+      {
+        "title": "Task 3 — Crea i volumi logici (Logical Volume)",
+        "text": "step3.md"
+      },
+      {
+        "title": "Task 4 — Formatta, monta e usa i volumi",
+        "text": "step4.md"
+      },
+      {
+        "title": "Task 5 — Emergenza: il disco è pieno",
+        "text": "step5.md"
+      },
+      {
+        "title": "Task 6 — Rendi tutto permanente e fai pulizia",
+        "text": "step6.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "courseData": "background.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
