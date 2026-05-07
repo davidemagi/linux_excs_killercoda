@@ -14,6 +14,6 @@ Collega `/tmp/disco3.img` come loop device su `/dev/loop12`, inizializzalo come 
 
 Poi estendi `lv_app` di 150MB.
 
-> 💡 `lvextend` ha un'opzione `-r` che ridimensiona anche il filesystem in automatico, senza dover lanciare `resize2fs` separatamente.
+> `lvextend` ha un'opzione `-r` che ridimensiona anche il filesystem in automatico, senza dover lanciare `resize2fs` separatamente.
 
 Alla fine verifica con `df -h` che `lv_app` sia cresciuto e che `versione.txt` sia ancora lì intatto.
