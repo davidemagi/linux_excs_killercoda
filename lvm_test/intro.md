@@ -1,27 +1,19 @@
-# Il Server di Mario — Episodio 2 🖥️💥
+# Il Server di Mario — Episodio 2
 
 Ti ricordi Mario?
 
-Sì, quello che l'ultima volta è andato in vacanza lasciandoti il server da gestire. Quello stesso.
+Sì, quello delle vacanze. È tornato, ha lavorato qualche settimana, e poi è ripartito — stavolta per un corso a Lisbona, durata imprecisata.
 
-Beh, è tornato. Per tre settimane. E poi è ripartito — stavolta per "un corso di formazione" a Lisbona, durata indefinita.
+Prima di sparire ti ha lasciato un messaggio vocale. Quaranta secondi, registrato chiaramente mentre guidava. Hai capito solo la parte finale:
 
-Prima di sparire ti ha lasciato un messaggio vocale di 40 secondi, di cui hai capito solo la parte finale:
-
-> *"...comunque i due dischi nuovi sono già montati nel server, devi solo configurarli con LVM. Ho già creato i file immagine, sono in `/tmp/`. Oh, quasi dimenticavo — il disco dell'applicazione si sta riempiendo. Gestisci tu. Ciao!"*
+> *"...i file immagine sono già in /tmp/, devi solo configurare LVM. Ah, e tieni d'occhio lo spazio su lv_app — c'è un terzo disco per quando serve. Ok ciao!"*
 
 Silenzio. Tono di chiamata conclusa.
 
-## Il tuo obiettivo
+---
 
-Configurare da zero una struttura LVM sul server: inizializzare i dischi, creare il pool, ricavare i volumi logici, montarli, e poi gestire un'emergenza di spazio.
-
-## Prima di iniziare
-
-Mario ha lasciato un promemoria sul server:
+Inizia leggendo quello che ha lasciato scritto:
 
 ```
 cat /home/mario/PROMEMORIA_LVM.txt
 ```
-
-Buona fortuna. Mario "torna presto".
