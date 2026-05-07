@@ -1,27 +1,13 @@
-# Task 1 — Inizializza i dischi come Physical Volume
+# Task 1 — Physical Volume
 
-Mario ha già preparato due dischi virtuali e li ha collegati al sistema come loop device. Prima di fare qualsiasi cosa, verifica che siano presenti.
+I due dischi virtuali sono già collegati al sistema. Prima di toccare qualsiasi cosa, verifica che ci siano davvero.
 
-## 1. Verifica lo stato dei dischi
+Controlla i loop device attivi — dovresti vedere `/dev/loop10` e `/dev/loop11`. Se non li vedi, aspetta qualche secondo: il sistema sta ancora finendo il setup.
 
-Controlla che i loop device siano attivi e visibili al sistema. Dovresti vedere `/dev/loop10` e `/dev/loop11`.
-
-> 💡 I comandi `losetup -l` e `lsblk` ti mostrano i dispositivi a blocchi attivi.
-
-## 2. Leggi il promemoria di Mario
-
-Mario ha lasciato istruzioni nella sua home. Leggile prima di procedere.
-
-## 3. Inizializza entrambi i dischi come Physical Volume
-
-LVM non può usare un disco finché non viene "consegnato" con il comando apposito. Inizializza `/dev/loop10` e `/dev/loop11`.
-
-## 4. Verifica il risultato
-
-Dopo l'inizializzazione, usa il comando per visualizzare i Physical Volume presenti nel sistema. Dovresti vedere entrambi i dischi con `200.00m` di spazio disponibile e nessun VG assegnato.
-
-> 💡 LVM ha tre livelli di comandi per visualizzare lo stato: uno breve (`pvs`) e uno dettagliato (`pvdisplay`). Prova entrambi.
+Leggi anche il promemoria che Mario ha lasciato nella sua home, così sai cosa ti aspetta nei prossimi task.
 
 ---
 
-**Risultato atteso:** due PV inizializzati, nessun dato ancora allocato.
+Quando sei pronto, inizializza entrambi i dischi come Physical Volume. È il comando con cui "consegni" un disco a LVM — scrive i propri metadati all'inizio del device e da quel momento LVM lo riconosce come suo.
+
+Dopo, verifica con `pvs` che siano comparsi entrambi. Prova anche `pvdisplay` per vedere i dettagli — in particolare il campo **PE Size**, che vale la pena capire prima di andare avanti.
